@@ -12,6 +12,7 @@ import json
 # MY db connection
 local_server= True
 app = Flask(__name__)
+application = app
 app.secret_key='hmsprojects'
 
 
@@ -307,4 +308,5 @@ def search():
 
 
 app.run(debug=True)    
-
+if __name__ == "__main__":
+    application.run(debug=True)
