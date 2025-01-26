@@ -10,12 +10,9 @@ import json
 
 
 # MY db connection
-
+local_server= True
 app = Flask(__name__)
 app.secret_key='hmsprojects'
-
-if __name__ != "__main__":
-application = app
 
 
 # this is for getting unique user access
@@ -308,6 +305,6 @@ def search():
 
 
 
-    
-if __name__ == "__main__":
-    app.run(debug=True)
+
+app.run(debug=True)    
+
